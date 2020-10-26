@@ -35,9 +35,8 @@ f = 1       # just for the prints
 
 ######################################## SOLUTION ##########################################################
 
-# select a non assigned state RANDOMLY
-# improvable: select before states which len(domain)==1
-
+# solve: takes a 3coloringCSP problem and solves it: ((until solution found){color best node, infer})
+# ac3:   support function used by solve function that does the inferring step
 
 # receives a tuple containing the new assignemt (state <-- color)
 # infer what the neighbours can contain after the assignment
