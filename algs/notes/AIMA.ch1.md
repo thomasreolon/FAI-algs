@@ -1,4 +1,4 @@
-# Chapter 1
+# Chapter 1: Artificial Intelligence
 
 The field of Artificial Intelligence (AI) attempts not just to understand (logic, psychology, neuroscience, philosophy, ...), but also to build intelligent entities (computer science, mathematics, engineering, ...).
 
@@ -26,8 +26,11 @@ Nowadays agents are tipically weak-narrow AI. This book explains how to build th
 ### History
 
 **1950**: Alang Turing & roots of AI
-**1958**: McCarthy & LISP
+**1958**: McCarthy introduces 'Artificial Intelligence' & LISP
 **1969**: Minsky & 1st AI winter (1 hidden layer cannot create XOR)
-**1980'**: researchers have a more scientific approach (statistic)
-**2001**: big data
-**2015**: deep learning & computational power
+**1980**: Expert systems
+**1997**: Deep Blue defeats Kasparov (chess)
+**2002**: Roomba learns to navigate homes
+**2011**: Siri virtual assistant
+**2012**: AlexNet and deep-learning
+**2020**: AI everywhere (computer vision, speach recognition, recommendation systems, autonomous cars, nlu, ...)
