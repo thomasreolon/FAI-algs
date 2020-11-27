@@ -17,7 +17,7 @@ complex sentence = sentences joined by connectives
 examples:
 
     everyone likes icecream  -> ∀x.Like(x, icecream)
-    if x<y and y<z than x<z> -> ∀x,y,z.((x<y ∧ y<z) ⇒ x<z)
+    if x<y and y<z than x<z  -> ∀x,y,z.((x<y ∧ y<z) ⇒ x<z)
     if you love every animal, someone will love you -> ∀p.[∀a.(Animal(a) ∧ Love(p,a)) ⇒ ∃x.(Love(x,p))]
 
 Knowlodge engineering:
