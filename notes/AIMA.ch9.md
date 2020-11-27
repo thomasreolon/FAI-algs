@@ -51,7 +51,7 @@ About Existential Instantiation:
 
 - **Backward Chaining**: inefficient. goal as a set of conjuctions. substitute a conjunction C of the goal with a set of conjunctions C' if (C'⇒Q is in the KB && are_unifiable(Q, C)).
 
-- **FOL to CNF**: fast
+- **FOL to CNF**: fast & complete. Transform to PL & prove that KB |= a showing that KB ^ not(a) is unsatisfiable
 
         # simplify KB
         1. simplify implications and biconditionals
