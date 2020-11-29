@@ -4,17 +4,19 @@
 
 Summary of the chapters from the AIMA book.
 
-| CH  | Title                                        | Summary                                 |
-| --- | -------------------------------------------- | --------------------------------------- |
-| 1   | [Artificial Intelligence](notes/AIMA.ch1.md) | agents & AI history                     |
-| 2   | [Agents](notes/AIMA.ch2.md)                  | agents classifications                  |
-| 3   | [Search](notes/AIMA.ch3.md)                  | BFS, A\*, ...                           |
-| 4   | [Local Search](notes/AIMA.ch4.md)            | greedy, genetic, online, ...            |
-| 5   | [Games](notes/AIMA.ch5.md)                   | min-max                                 |
-| 6   | [CSP](notes/AIMA.ch6.md)                     | np-complete, backtrack, value selection |
-| 7   | [Logical Agents](notes/AIMA.ch7.md)          | prop. logic, CNF, DPLL                  |
-| 8   | [FOL](notes/AIMA.ch8.md)                     | intro to FOL                            |
-| 9   | [FOL Inference ](notes/AIMA.ch9.md)          |                                         |
+| CH  | Title                                        | Summary                                  |
+| --- | -------------------------------------------- | ---------------------------------------- |
+| 1   | [Artificial Intelligence](notes/AIMA.ch1.md) | agents & AI history                      |
+| 2   | [Agents](notes/AIMA.ch2.md)                  | agents classifications                   |
+| 3   | [Search](notes/AIMA.ch3.md)                  | BFS, A\*, ...                            |
+| 4   | [Local Search](notes/AIMA.ch4.md)            | greedy, genetic, online, ...             |
+| 5   | [Games](notes/AIMA.ch5.md)                   | min-max                                  |
+| 6   | [CSP](notes/AIMA.ch6.md)                     | np-complete, backtrack, value selection  |
+| 7   | [Logical Agents](notes/AIMA.ch7.md)          | prop. logic, CNF, DPLL                   |
+| 8   | [FOL](notes/AIMA.ch8.md)                     | intro to FOL                             |
+| 9   | [FOL Inference ](notes/AIMA.ch9.md)          | FOL inference: forward, backward, 2SAT   |
+| 10  | [Planning ](notes/AIMA.ch10.md)              | problem, search , graphLapl, SAT, search |
+| 11  | [Planning Applications ](notes/AIMA.ch11.md) | applications: scheduling, hierarchical   |
 
 ## Algorithms
 
