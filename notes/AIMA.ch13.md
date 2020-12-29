@@ -15,3 +15,12 @@ P(cause|effect) = P(effect|cause)P(cause)/P(effect) ---- _bayes rule_
 P(Cause|Effect1, ..., Effectn) = α \* P(Cause) \* Π_i P(Effect_i|Cause)
 
 ## Example of Computation
+
+evidence = not pit ((1,1), (1,2), (2,1)) ; not breeze((1,1)) ; breeze((1,2),(2,1))
+
+evidence = b*, p*
+
+P(query/evidence) = α*P(query, evidence) = α\*sum_u\*P(query, evidence, u) = ...
+... = α\*P(p*)\*P(query)\*sum_fringe[ P(b*|p*,query,fringe) \* P(fringe)]
+
+**TL;DR: average through uncertainity than simplify (indipenences)**
