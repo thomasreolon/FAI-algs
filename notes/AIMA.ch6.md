@@ -25,7 +25,7 @@ propagating information from assigned to unassigned varables
     1. arc = get_next(toCheck)
     2. if (size(D[arc[0]])==0): return false
     3. for x in D[arc[0]]:
-           delete x if "unsatisfiable constraint x<-->y, y in D[arc[1]]"
+           delete x if "unsatisfiable constraint x⇔y, y in D[arc[1]]"
     4. if (modified(D[arc[0]])):
           toCheck += [(adj, arc[0]) for adj in neighbours(arc[0])]
     5. if (size(toCheck)>0): toTo 1.
@@ -78,8 +78,8 @@ Real problems involving CSP:
 - scheduling
 
 NOTE:
-if no unary constraints ---> renaming domain is possible
-eg. if X is a 3-coloring solution of a graph, you can swap colors obtaining valid solutions (A=red, B=blue ==> A=blue, B=red)
+if no unary constraints ⇒ renaming domain is possible
+eg. if X is a 3-coloring solution of a graph, you can swap colors obtaining valid solutions (A=red, B=blue ⇒ A=blue, B=red)
 
 ---
 

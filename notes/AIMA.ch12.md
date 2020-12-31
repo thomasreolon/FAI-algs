@@ -1,4 +1,4 @@
-# Knowledge Representation
+# Chapter 12: Knowledge Representation
 
 - knowledge engineering: how to represent the world
 - ontological engineering: how to build general-purpose ontologies
@@ -47,7 +47,7 @@ Need for referential opacity with multiple agents. -> K_A(B) := A knows B
 
 w0 --K_a-> w1 := w1 is accessible with K_a from w0 (stuff in w0 are consistent with w1)
 
-#### Categories
+##### Categories
 
 - Semantic Networks
 - Description Logics

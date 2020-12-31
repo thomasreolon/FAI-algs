@@ -1,10 +1,10 @@
-# Probabilistic Reasoning
+# Chapter 14: Probabilistic Reasoning
 
 **Baesyan Networks** as a DAG: nodes are random variables, arcs represent cause/effect (dipendence)
 
 if youo constrain each node to have maximum k parents, storing the network requires n\*2^k space.
 
-BN <==> P(X1, ..., XN) = Π_i P(Xi|parents(Xi))
+BN ⇔ P(X1, ..., XN) = Π_i P(Xi|parents(Xi))
 = Π_i P(Xi|X1,...,Xi-1) # assuming Xi in topoligical order
 
 ---

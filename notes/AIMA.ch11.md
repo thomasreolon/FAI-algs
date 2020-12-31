@@ -1,8 +1,8 @@
-# Planning Applications
+# Chapter 11: Planning Applications
 
 We add RESOURCES to the problem of planning (consume, use)
 
-![plan](images/egPlan.JPG)
+![plan](images/egplan.JPG)
 
 ##### Scheduling without considering RESOURCES
 
@@ -15,8 +15,15 @@ We add RESOURCES to the problem of planning (consume, use)
            LS[state] = max( [LS[succ]-duration(succ)   for succ in actions_after(state)] )
 
 Example of a scheduling
+
 ![sched](images/egScheduling.JPG)
 
 ##### Hierarchical Planning
 
-add refinements?? more ways to do a subplan?
+mmmm: like a DFS of possible actions, if goal is reached: return plan
+
+##### Planning & non-determinism
+
+3 types: Sensorless planning, Conditional planning, Execution monitoring and replanning
+
+Different from search for the representations: belief state is a logic formula; actions have preconditions and effect that modify the state

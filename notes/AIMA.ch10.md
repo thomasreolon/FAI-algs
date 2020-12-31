@@ -1,4 +1,4 @@
-# Chapter 9: Planning
+# Chapter 10: Planning
 
         Problem := (Initial State, Actions, States, Goal)
         Solution := list of actions needed to achieve the goal from the initial state

@@ -1,4 +1,4 @@
-# Uncertainity
+# Chapter 13: Uncertainity
 
 non deterministic actions / partial obsevability ==> use of probability
 

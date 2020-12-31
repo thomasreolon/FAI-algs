@@ -1,6 +1,6 @@
 # Chapter 5: Games
 
-The solution isn't a path, but is a strategy (: S -> A): specify moves for every possible opponent reply.
+The solution isn't a path, but is a strategy (strategy := State -> Action): specify moves for every possible opponent reply.
 
 ![game algs](images/gameAlgs.jpg)
 

@@ -24,8 +24,8 @@ Use a heuristic h(n) that estimates how close a state n is to a goal.
 
     h:  (state) => cost
 
-    - admissible <=>     h(n) <= h*(n)       with h* the true cost
-    - consistent <=>     h(n) <= c(n,a,n') + h(n')
+    - admissible ⇔     h(n) <= h*(n)       with h* the true cost
+    - consistent ⇔     h(n) <= c(n,a,n') + h(n')
 
 - Greedy Search
 - A\* (optimal if h is admissible)
