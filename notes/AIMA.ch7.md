@@ -11,6 +11,69 @@ Finding a model (solvability problem) is NP-complete. Luckyly there is a process
     1. F = CNF(F)
     2. model = SATsolver(F)
 
+---
+
+##### brief intro
+
+allright, so, DPLL is an algorithm used to find a model that satisfies a formula
+
+example of a formula (already in CNF):
+(A v B) ^ (C v not(B))
+
+a model that satisfies the above formula:
+{A:True, B:False, C:False}
+
+note: also {A:True, B:True, C:True} and {A:True, B:False, C:True} and {A:False, B:True, C:True} are models that satisfy (A v B) ^ (C v not(B))
+
+note: sometimes models are also called 'worlds'
+
+---
+
+the DPLL algorithm is used to create models that satisfy a formula, you start with an empty model and, at each iteration, you set a new variable to True/False.
+
+you prioritize deterministic assignments (eg. in "(not(A)) ^ (A v B)" you have to assign A to False)
+
+the things you look for when deciding which variable to assign are:
+
+1. is there a pure variable: a variable that is either never or always precedeed by a not
+
+eg. in "(A v not(B)) ^ (C v not(B)) ^ (not(A) v not(C))" B is pure because it is always preceeded by a not
+
+2. is there a unit clause
+
+eg. in "(A v B) ^ (not(A))" not(A) is a unit clause, to make it true, the only option is to assign A to False
+
+3. if there are no pure variables/unit clauses (deterministic assignments) you have to decide a variable (( heuristics are used in more advanced algorithms )) and assign it. if you then discover that the model you were building cannot satisfy the formula you have to backtrack to the last non deterministic assignment you have made, switch its value and redo the computations
+
+---
+
+note: cnf satisfiability is a np-complete problem, but with the right heuristics (implemented by modern sat solvers) you can resolve even complex problem
+
+note: there is an algorithm that transforms a formula to CNF form
+
+---
+
+exercise: use DPLL to solve "(A v B v not(C)) ^ (A v not(D)) ^ (C v not(A)) ^ (D v C)"
+
+iteration 1: B is pure
+
+model: {B:True}
+formula (remove solved clauses): "(A v not(D)) ^ (C v not(A)) ^ (D v C)"
+
+iteration 2: C is pure
+model: {B:true, C:true}
+formula: "(A v not(D))
+
+iteration 3: A is pure
+model: {B:true, C:true, A:true}
+formula: null
+
+iteration 4: solved, put either D to true or false to have a valid model
+
+model: {B:true, C:true, A:true, D:false}
+
+---
+
 CNF := conjunction of disjunctions of literals (eg. (A v B) ∧ (not(B) v C))
 
 a fast algorithm to obtain CNF(F) is Tseitin’s conversion
