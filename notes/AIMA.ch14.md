@@ -1,6 +1,6 @@
 # Chapter 14: Probabilistic Reasoning
 
-**Baesyan Networks** as a DAG: nodes are random variables, arcs represent cause/effect (dipendence)
+**Bayesian Networks** as a DAG: nodes are random variables, arcs represent cause/effect (dipendence)
 
 if youo constrain each node to have maximum k parents, storing the network requires n\*2^k space.
 
@@ -17,7 +17,7 @@ Local Semantics states that if you know the parents of a node, that node is indi
 
 ---
 
-**Building the Baesyan Network**
+**Building the Bayesian Network**
 
     arcs = []
     for each randVar Xi:
